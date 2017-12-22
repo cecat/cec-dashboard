@@ -3,7 +3,7 @@
 require "fitgem"
 require "yaml"
 
-config = Fitgem::Client.symbolize_keys YAML.load(File.open(".fitbit.yml"))
+config = Fitgem::Client.symbolize_keys YAML.load(File.open("./config/application.yml"))
 client = Fitgem::Client.new config[:oauth]
 request_token = client.request_token
 
@@ -18,4 +18,4 @@ rescue Exception => error
 end
 
 config[:oauth].merge! :token => access_token.token, :secret => access_token.secret, :user_id => client.user_info["user"]["encodedId"]
-File.open(".fitbit.yml", "w") { |file| file.write config.to_yaml }
+File.open("./config/application.yml", "w") { |file| file.write config.to_yaml }
