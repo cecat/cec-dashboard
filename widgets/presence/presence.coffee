@@ -1,3 +1,5 @@
+#from https://github.com/harperreed/reedazawa-dashboard
+
 class Dashing.Presence extends Dashing.Widget
 
   ready: ->
