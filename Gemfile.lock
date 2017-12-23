@@ -122,6 +122,7 @@ DEPENDENCIES
   fitgem
   haml
   json
+  oauth2
   smashing
   twitter (>= 5.9.0)
 
