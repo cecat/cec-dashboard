@@ -23,6 +23,8 @@ GEM
       oauth2 (~> 1.0)
     fitgem (0.12.1)
       oauth
+    fitgem_oauth2 (1.1.2)
+      faraday (~> 0.9)
     haml (5.0.4)
       temple (>= 0.8.0)
       tilt
@@ -120,9 +122,9 @@ DEPENDENCIES
   figaro
   fitbit-api-client
   fitgem
+  fitgem_oauth2
   haml
   json
-  oauth2
   smashing
   twitter (>= 5.9.0)
 
