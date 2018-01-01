@@ -1,7 +1,8 @@
 class Dashing.Clock extends Dashing.Widget
 
   ready: ->
-    setInterval(@startTime, 60000)
+
+    setInterval(@startTime, 5000) #update every 5s
 
   startTime: =>
     today = new Date()
