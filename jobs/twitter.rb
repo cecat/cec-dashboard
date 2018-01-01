@@ -4,17 +4,19 @@ require 'twitter'
 #### Get your twitter keys & secrets:
 #### https://dev.twitter.com/docs/auth/tokens-devtwittercom
 twitter = Twitter::REST::Client.new do |config|
-  config.consumer_key = 'YOUR_CONSUMER_KEY'
-  config.consumer_secret = 'YOUR_CONSUMER_SECRET'
-  config.access_token = 'YOUR_OAUTH_TOKEN'
-  config.access_token_secret = 'YOUR_OAUTH_SECRET'
+  config.consumer_key = '90zhPqAeH8EfnbDUouJziRbGJ'
+  config.consumer_secret = 'MagkmsMqfrpvqCZYxdsOWutTw1ZGxC6vBQcL2iRaW3qPJtORL6'
+  config.access_token = '5414162-feK1ujqZUQdeO8sWFjL7CNrgPRAHmPuj9Uw47YB0mM'
+  config.access_token_secret = 'oIyUebJSdls5MmV0BQ49TZrzCNCsTNRzwDUNwGM1LW9gE'
 end
 
-search_term = URI::encode('#todayilearned')
+# search_term = URI::encode('#todayilearned')
 
 SCHEDULER.every '10m', :first_in => 0 do |job|
   begin
-    tweets = twitter.search("#{search_term}")
+#    tweets = twitter.search("#{search_term}")
+# instead of searching... get my latest 5 tweets
+    tweets = twitter.user_timeline[0..4]
 
     if tweets
       tweets = tweets.map do |tweet|
