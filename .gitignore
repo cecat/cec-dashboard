@@ -1,6 +1,5 @@
 #ignore files with user creds in them
 *.yml
-config/*.yml
 
 #folders with test stuff
 legacy-save-files/
