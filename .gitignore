@@ -4,3 +4,7 @@
 #folders with test stuff
 legacy-save-files/
 parking/
+
+#hard coded twitter widget job
+#later I'll move credentials to a .yml but for now while playing...
+jobs/twitter.rb
