@@ -10,11 +10,16 @@ gem "figaro"
 gem "fitgem"
 gem "haml"
 
-# a different fitbit attempt
-gem 'fitbit-api-client', require: 'fitbit'
-
 # another route in attempt at making fitbit auth work...
 gem 'fitgem_oauth2'
+
+# for new fit widget
+#gem 'oauth2'
+
+gem 'fitbit'
+
+# a different fitbit attempt
+#gem 'fitbit-api-client', require: 'fitbit'
 
 ## Remove this if you don't need a twitter widget.
 gem 'twitter', '>= 5.9.0'
