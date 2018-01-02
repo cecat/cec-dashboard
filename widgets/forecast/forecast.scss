@@ -1,10 +1,11 @@
 // ----------------------------------------------------------------------------
 // Sass declarations
 // ----------------------------------------------------------------------------
-$background-color:  #EC3C6B;
+$background-color:  #eee;
+$text-color: #222;
 
-$full-color:  rgba(255, 255, 255, 1);
-$light-color: rgba(255, 255, 255, 0.7);
+$full-color:  #444;
+$light-color: #333;
 
 // ----------------------------------------------------------------------------
 // Widget-forecast styles
@@ -14,11 +15,11 @@ $light-color: rgba(255, 255, 255, 0.7);
   background-color: $background-color;
 
   .title {
-    color: $light-color;
+    color: $text-color;
   }
 
   .temp {
-    color: $full-color;
+    color: $text-color;
   }
 
   .summary {
@@ -30,6 +31,6 @@ $light-color: rgba(255, 255, 255, 0.7);
   }
 
   .updated-at {
-    color: rgba(0, 0, 0, 0.3);
+    color: $light-color;
   }
 }
